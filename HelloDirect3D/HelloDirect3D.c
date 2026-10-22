@@ -1,4 +1,4 @@
-// HelloDirect3D.cpp : Defines the entry point for the application.
+// HelloDirect3D.c : Defines the entry point for the application.
 //
 
 #include "framework.h"
@@ -30,6 +30,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ LPWSTR    lpCmdLine,
                      _In_ int       nCmdShow)
 {
+
     
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
@@ -86,8 +87,6 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    else if (nResponse == -1)
        return FALSE;
    return TRUE;
-
-   return TRUE;
 }
 
 
@@ -125,7 +124,6 @@ INT_PTR CALLBACK HelloDirect3DDlg(HWND hDlg, UINT message, WPARAM wParam, LPARAM
         RenderScene();
         break;
     }
-   
     case WM_PAINT:
     {
         PAINTSTRUCT ps;
