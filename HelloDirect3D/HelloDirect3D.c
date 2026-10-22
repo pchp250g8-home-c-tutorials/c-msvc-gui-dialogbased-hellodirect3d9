@@ -91,7 +91,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
 
 
-// Message handler for about box.
+// Message handler for Dialog Box - main window of the application.
 INT_PTR CALLBACK HelloDirect3DDlg(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
     UNREFERENCED_PARAMETER(lParam);
